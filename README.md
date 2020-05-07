@@ -1,6 +1,6 @@
-# Drillinginfo Direct Access C# Classes by Mi4
+# Enverus Drillinginfo Direct Access C# Classes by Mi4
 
-This repository contains the C# classes created by Mi4 for various solutions we have implemented using Drillinginfo's Direct Access API.
+This repository contains the C# classes created by Mi4 for various solutions we have implemented using Enverus Drillinginfo's Direct Access API.
 
 1. [ The Direct Access API](#api)
 2. [ Purpose ](#purpose)
@@ -11,7 +11,7 @@ This repository contains the C# classes created by Mi4 for various solutions we 
 <a name="api"></a>
 ## The Direct Access API
 
-Drillinginfo’s Direct Access API provides simple programmatic access to Drillinginfo database servers. The Direct Access API is available to DI Plus customers and allows for direct data imports to data warehouses or internal applications.
+Enverus Drillinginfo’s Direct Access API provides simple programmatic access to Drillinginfo database servers. The Direct Access API is available to DI Plus customers and allows for direct data imports to data warehouses or internal applications.
 
 Direct Access Version 2 is the most recent API version and is replacing Direct Access Version 1.
 
@@ -23,14 +23,14 @@ The purpose of this repository is to accelerate development of C# Direct Access 
 <a name="contents"></a>
 ## Repository Contents
 
-This repository contains C# classes of the Drillinginfo Direct Access data model. The C# classes were created by Mi4 and contain most Version 2 endpoints and some Version 1 endpoints.
+This repository contains C# classes of the Enverus Drillinginfo Direct Access data model. The C# classes were created by Mi4 and contain most Version 2 endpoints and some Version 1 endpoints.
 
 This repository does not contain information regarding downloading, storing, or processing data from the Direct Access API; It does not contain schema or relationship information.
 
 <a name="disclaimer"></a>
 ## Disclaimer
 
-Mi4 is not affiliated with Drillinginfo and the information in this repository should not be considered a source of truth. Mi4 will maintain and update the repository but the information is made available “as is” under an MIT license. Official Drillinginfo documentation should always be consulted.
+Mi4 is not affiliated with Enverus and the information in this repository should not be considered a source of truth. Mi4 will maintain and update the repository but the information is made available “as is” under an MIT license. Official Enverus Drillinginfo documentation should always be consulted.
 
 <a name="feedback"></a>
 ## Feedback
