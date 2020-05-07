@@ -32,7 +32,7 @@ namespace DirectAccess
 
         public double? IngredientPercentHFJobReported { get; set; }
 
-        public string MassDuplicationFlag { get; set; }
+        public bool? MassDuplicationFlag { get; set; }
 
         public double? MaxIngredientMassLbs { get; set; }
 

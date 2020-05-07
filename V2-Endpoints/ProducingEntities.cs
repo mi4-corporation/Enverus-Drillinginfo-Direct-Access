@@ -60,7 +60,7 @@ namespace DirectAccess
 
         public string Geom { get; set; }
 
-        public int? IsDeleted { get; set; }
+        public bool? IsDeleted { get; set; }
 
         public double? Latitude { get; set; }
 
@@ -155,6 +155,10 @@ namespace DirectAccess
         public string LiqGathName2 { get; set; }
 
         public string GasGathName2 { get; set; }
+
+        public string AllInjectedProductTypes { get; set; }
+
+        public string LastInjectedProductTypes { get; set; }
 
     }
 

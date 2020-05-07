@@ -1,0 +1,128 @@
+Use DrillingInfo 
+
+if not exists (select * 
+    from INFORMATION_SCHEMA.TABLES   
+    where TABLE_SCHEMA = N'dbo' and TABLE_NAME = N'RigAnalytics') 
+begin
+
+create table RigAnalytics(
+	Mi4RigAnalyticID int primary key identity,
+	API10 varchar(max) null,
+	APIVisitNumber int null,
+	Abstract varchar(max) null,
+	ActiveStatus varchar(max) null,
+	[Block] varchar(max) null,
+	CompletionDate datetime null,
+	CompletionToProduction float null,
+	ContractorName varchar(max) null,
+	ContractorWebsite varchar(max) null,
+	Country varchar(max) null,
+	CountyParish varchar(1000) null,
+	CreatedDate datetime null,
+	DIBasin varchar(max) null,
+	DILandingZone varchar(max) null,
+	DIPlay varchar(max) null,
+	DISubplay varchar(max) null,
+	DUCEndDate datetime null,
+	DUCStartDate datetime null,
+	DUCStatus varchar(max) null,
+	DaysOnLocation float null,
+	DeletedDate datetime null,
+	DrawWorks varchar(max) null,
+	DrillType varchar(max) null,
+	DrilledHorizontalDistance float null,
+	DrilledVerticalDepth float null,
+	Field varchar(max) null,
+	FirstDay datetime null,
+	FirstProductionDate datetime null,
+	FootagePerDaySection float null,
+	FootagePerDayWell float null,
+	Formation varchar(max) null,
+	FormationDepth float null,
+	H2SArea varchar(max) null,
+	Hydrocarbon varchar(max) null,
+	IsDeleted bit null,
+	JobID varchar(max) null,
+	LandOffshore varchar(max) null,
+	LastDay datetime null,
+	LateralLength float null,
+	LateralLengthSource varchar(max) null,
+	LeaseName varchar(max) null,
+	MaxRigVisitNumber int null,
+	MeasuredDepthTD float null,
+	Mobility varchar(max) null,
+	MoveDistanceFromLastJobmi float null,
+	MoveDistanceToNextJobmi float null,
+	OFSRegion varchar(max) null,
+	OperatorAtDrill varchar(max) null,
+	OperatorCity30mi varchar(max) null,
+	OperatorCity50mi varchar(max) null,
+	OperatorCompanyName varchar(max) null,
+	OperatorTicker varchar(max) null,
+	PermitAmendedDate datetime null,
+	PermitApprovalDate datetime null,
+	PermitBottomHoleLatitudeWGS84 float null,
+	PermitBottomHoleLongitudeWGS84 float null,
+	PermitDepth float null,
+	PermitExpiredDate datetime null,
+	PermitLatitudeWGS84 float null,
+	PermitLongitudeWGS84 float null,
+	PermitNumber varchar(max) null,
+	PermitOriginalApprovedDate datetime null,
+	PermitPostedDate datetime null,
+	PermitStatus varchar(max) null,
+	PermitToSpud float null,
+	PermitType varchar(max) null,
+	PowerType varchar(max) null,
+	ProductionStatus varchar(max) null,
+	[Range] varchar(max) null,
+	RatedHP float null,
+	RatedWaterDepth float null,
+	ReleaseDate datetime null,
+	ReleaseToCompletion float null,
+	ReportedOperator varchar(Max) null,
+	ReservoirAlias varchar(max) null,
+	RigClass varchar(max) null,
+	RigID int null,
+	RigLatitudeWGS84 float null,
+	RigLongitudeWGS84 float null,
+	RigNameNumber varchar(max) null,
+	RigType varchar(max) null,
+	RigVisitNumber int null,
+	Section varchar(max) null,
+	SectionDrilled varchar(max) null,
+	SpudDate datetime null,
+	SpudToCompletion float null,
+	SpudToRelease float null,
+	StateProvince varchar(1000) null,
+	Survey varchar(max) null,
+	TVD float null,
+	TVDSource varchar(max) null,
+	TemporaryLocation varchar(max) null,
+	TemporaryPermitID int null,
+	TotalDaysOnLocation float null,
+	Township varchar(max) null,
+	UpdatedDate datetime null,
+	WellNumber varchar(max) null,
+	WellStartDate datetime null,
+	WellStatus varchar(max) null,
+	WellType varchar(max) null,
+	WellTypeAlias varchar(max) null,
+	Wildcat varchar(max) null,
+	Mi4AddDtTm datetime NULL default GETDATE(),
+	Mi4LastUpdateDtTm datetime null)
+				
+end
+
+begin
+
+IF NOT EXISTS (SELECT * FROM DrillingInfo.sys.indexes WHERE object_id = OBJECT_ID(N'DrillingInfo.[dbo].RigAnalytics') AND name = N'IX_RigAnalytics_UpdatedDate') CREATE NONCLUSTERED INDEX IX_RigAnalytics_UpdatedDate ON DrillingInfo.dbo.RigAnalytics (UpdatedDate)
+
+IF NOT EXISTS (SELECT * FROM DrillingInfo.sys.indexes WHERE object_id = OBJECT_ID(N'DrillingInfo.[dbo].RigAnalytics') AND name = N'IX_RigAnalytics_StateProvince') CREATE NONCLUSTERED INDEX IX_RigAnalytics_StateProvince ON DrillingInfo.dbo.RigAnalytics (StateProvince)
+
+IF NOT EXISTS (SELECT * FROM DrillingInfo.sys.indexes WHERE object_id = OBJECT_ID(N'DrillingInfo.[dbo].RigAnalytics') AND name = N'IX_RigAnalytics_CountyParish') CREATE NONCLUSTERED INDEX IX_RigAnalytics_CountyParish ON DrillingInfo.dbo.RigAnalytics (CountyParish)
+
+IF NOT EXISTS (SELECT * FROM DrillingInfo.sys.indexes WHERE object_id = OBJECT_ID(N'DrillingInfo.[dbo].RigAnalytics') AND name = N'IX_RigAnalytics_DeletedDate') CREATE NONCLUSTERED INDEX IX_RigAnalytics_DeletedDate ON DrillingInfo.dbo.RigAnalytics (DeletedDate)
+
+end
+

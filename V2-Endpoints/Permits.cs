@@ -56,11 +56,11 @@ namespace DirectAccess
 
         public string DrillType { get; set; }
 
-        public int? PermitDepth { get; set; }
+        public double? PermitDepth { get; set; }
 
         public string PermitDepthUOM { get; set; }
 
-        public int? TrueVerticalDepth { get; set; }
+        public double? TrueVerticalDepth { get; set; }
 
         public string TrueVerticalDepthUOM { get; set; }
 
@@ -104,13 +104,33 @@ namespace DirectAccess
 
         public double? BottomHoleLongitudeWGS84 { get; set; }
 
-        public int? H2SArea { get; set; }
+        public bool? H2SArea { get; set; }
 
         public DateTime? CreatedDate { get; set; }
 
         public DateTime? DeletedDate { get; set; }
 
         public DateTime? UpdatedDate { get; set; }
+
+        public string ActiveCommonName { get; set; } 
+
+        public string ActiveTickerName { get; set; } 
+
+        public string DIBasin { get; set; } 
+
+        public string DICountryCode { get; set; } 
+
+        public string DICountryName { get; set; } 
+
+        public string DICountyParishName { get; set; } 
+
+        public string DIPlay { get; set; } 
+
+        public string DIStateProvinceCode { get; set; }
+
+        public string DIStateProvinceName { get; set; }
+
+        public string DISubPlay { get; set; }
 
     }
 

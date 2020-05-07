@@ -15,7 +15,7 @@ namespace DirectAccess
 
         public string BasinName { get; set; }
 
-        public int? CasingFlangeElev { get; set; }
+        public double? CasingFlangeElev { get; set; }
 
         public DateTime? CompletionDate { get; set; }
 
@@ -43,7 +43,7 @@ namespace DirectAccess
 
         public string District { get; set; }
 
-        public int? DrillerTotalDepth { get; set; }
+        public double? DrillerTotalDepth { get; set; }
 
         public string ElevUOM { get; set; }
 
@@ -63,11 +63,11 @@ namespace DirectAccess
 
         public double? KickoffPointDepth { get; set; }
 
-        public int? LoggersTotalDepth { get; set; }
+        public double? LoggersTotalDepth { get; set; }
 
         public DateTime? OnProductionDate { get; set; }
 
-        public int? PlugbackDepth { get; set; }
+        public double? PlugbackDepth { get; set; }
 
         public string ProfileType { get; set; }
 
@@ -93,13 +93,13 @@ namespace DirectAccess
 
         public string StateProvince { get; set; }
 
-        public int? TotalDepth { get; set; }
+        public double? TotalDepth { get; set; }
 
         public string Township { get; set; }
 
         public string TownshipDirection { get; set; }
 
-        public int? TrueVerticalDepth { get; set; }
+        public double? TrueVerticalDepth { get; set; }
 
         public int? UID { get; set; }
 
@@ -115,11 +115,11 @@ namespace DirectAccess
 
         public string WellboreName { get; set; }
 
-        public int? WellboreNumber { get; set; }
+        public double? WellboreNumber { get; set; }
 
         public string WellboreType { get; set; }
 
-        public int? WhipstockDepth { get; set; }
+        public double? WhipstockDepth { get; set; }
 
     }
 

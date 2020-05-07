@@ -28,13 +28,13 @@ namespace DirectAccess
 
         public string FormationConformed { get; set; }
 
-        public int? FormationTopTVD { get; set; }
+        public double? FormationTopTVD { get; set; }
 
-        public int? FormationTopMD { get; set; }
+        public double? FormationTopMD { get; set; }
 
-        public int? FormationTopUnknown { get; set; }
+        public double? FormationTopUnknown { get; set; }
 
-        public int? FormationBottomUnknown { get; set; }
+        public double? FormationBottomUnknown { get; set; }
 
         public string Source { get; set; }
 
@@ -47,6 +47,10 @@ namespace DirectAccess
         public string BasinName { get; set; }
 
         public string District { get; set; }
+
+        public string DIBasin { get; set; } 
+
+        public string DIStateProvinceCode { get; set; }
 
     }
 

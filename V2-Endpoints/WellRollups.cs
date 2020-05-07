@@ -22,7 +22,39 @@ namespace DirectAccess
 
         public double? AvgDistanceFromTopOfZone { get; set; }
 
+        public double? BeGasBfactor { get; set; } 
+
+        public DateTime? BeGasEndDate { get; set; } 
+
+        public double? BeGasFinalRate { get; set; } 
+
+        public DateTime? BeGasInitialDate { get; set; } 
+
+        public double? BeGasInitialDecline { get; set; } 
+
+        public double? BeGasInitialRate { get; set; }
+
+        public double? BeGasMonths { get; set; }
+
+        public double? BeOilBfactor { get; set; }
+
+        public DateTime? BeOilEndDate { get; set; }
+
+        public double? BeOilFinalRate { get; set; }
+
+        public DateTime? BeOilInitialDate { get; set; }
+
+        public double? BeOilInitialDecline { get; set; }
+
+        public double? BeOilInitialRate { get; set; } 
+
+        public double? BeOilMonths { get; set; } 
+
         public string Block { get; set; }
+
+        public double? BoeEur { get; set; } 
+
+        public double? BoeEurPerfFt { get; set; }
 
         public double? BottomHoleLatitudeWGS84 { get; set; }
 
@@ -31,6 +63,8 @@ namespace DirectAccess
         public double? CompletionCountAPI10 { get; set; }
 
         public DateTime? CompletionDate { get; set; }
+
+        public string CompletionDateSource { get; set; }
 
         public string Country { get; set; }
 
@@ -55,6 +89,12 @@ namespace DirectAccess
         public string DIBasin { get; set; }
 
         public string DILandingZone { get; set; }
+
+        public string DILandingZoneSource { get; set; } 
+
+        public double? DILateralLength { get; set; } 
+
+        public string DILateralLengthSource { get; set; }
 
         public string DIPlay { get; set; }
 
@@ -246,6 +286,34 @@ namespace DirectAccess
 
         public string FracVendor { get; set; }
 
+        public double? FullGasBfactor { get; set; } 
+
+        public DateTime? FullGasEndDate { get; set; } 
+
+        public double? FullGasFinalRate { get; set; } 
+
+        public double? FullGasInitialDecline { get; set; }
+
+        public double? FullGasMonths { get; set; } 
+
+        public double? FullGasinitialRate { get; set; } 
+
+        public double? FullOilBfactor { get; set; } 
+
+        public double? FullOilEndDate { get; set; } 
+
+        public double? FullOilFinalRate { get; set; }
+
+        public double? FullOilInitialDecline { get; set; }
+
+        public double? FullOilInitialRate { get; set; } 
+
+        public double? FullOilMonths { get; set; } 
+
+        public string GrossPerforationIntervalSource { get; set; }
+
+        public string GroundElevationType { get; set; }
+
         public string GasGatherer { get; set; }
 
         public double? GasGravity { get; set; }
@@ -260,15 +328,23 @@ namespace DirectAccess
 
         public double? GroundElevation { get; set; }
 
-        public int? HasDigitizedTrajectory { get; set; }
+        public bool? HasDigitizedTrajectory { get; set; } 
 
-        public int? HasWellLogLAS { get; set; }
+        public bool? HasFilingDocument { get; set; } 
 
-        public int? HasWellLogRaster { get; set; }
+        public bool? HasProductionForecast { get; set; }
+
+        public bool? HasWellLogLAS { get; set; } 
+
+        public bool? HasWellLogRaster { get; set; }
 
         public double? HorizontalLength { get; set; }
 
         public double? HorizontalWellboreLength { get; set; }
+
+        public bool? IsGasDcaProxied { get; set; } 
+
+        public bool? IsOilDcaProxied { get; set; } 
 
         public string LASMnemonics { get; set; }
 
@@ -418,6 +494,8 @@ namespace DirectAccess
 
         public DateTime? SpudDate { get; set; }
 
+        public string SpudDateSource { get; set; } 
+
         public double? StageCountFirstTreatmentJob { get; set; }
 
         public DateTime? StartDateFirstTreatmentJob { get; set; }
@@ -449,6 +527,8 @@ namespace DirectAccess
         public string TreatmentType { get; set; }
 
         public double? TrueVerticalDepth { get; set; }
+
+        public string TrueVerticalDepthSource { get; set; }
 
         public string UWI { get; set; }
 

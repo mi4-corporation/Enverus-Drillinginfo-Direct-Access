@@ -144,6 +144,8 @@ namespace DirectAccess
 
         public string District { get; set; }
 
+        public double? BottomholePressure { get; set; }
+
     }
 
 }

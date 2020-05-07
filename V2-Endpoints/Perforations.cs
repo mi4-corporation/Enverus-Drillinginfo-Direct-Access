@@ -36,7 +36,7 @@ namespace DirectAccess
 
         public DateTime? PerforationDate { get; set; }
 
-        public int? PerforationDensity { get; set; }
+        public double? PerforationDensity { get; set; }
 
         public decimal? PerforationDiameter { get; set; }
 
@@ -44,7 +44,7 @@ namespace DirectAccess
 
         public int? PerforationSequence { get; set; }
 
-        public int? OpenHole { get; set; }
+        public bool? OpenHole { get; set; }
 
         public string PerforationRemark { get; set; }
 

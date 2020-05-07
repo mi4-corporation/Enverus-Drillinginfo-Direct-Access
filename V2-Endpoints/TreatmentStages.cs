@@ -22,19 +22,19 @@ namespace DirectAccess
 
         public DateTime? CreatedDate { get; set; }
 
-        public int? StageNumber { get; set; }
+        public double? StageNumber { get; set; }
 
-        public int? TreatmentTop { get; set; }
+        public double? TreatmentTop { get; set; }
 
-        public int? TreatmentBottom { get; set; }
+        public double? TreatmentBottom { get; set; }
 
-        public int? TotalFluidGal { get; set; }
+        public double? TotalFluidGal { get; set; }
 
-        public int? TotalProppantLbs { get; set; }
+        public double? TotalProppantLbs { get; set; }
 
-        public int? TotalAdditiveGal { get; set; }
+        public double? TotalAdditiveGal { get; set; }
 
-        public int? TotalAdditiveLbs { get; set; }
+        public double? TotalAdditiveLbs { get; set; }
 
         public decimal? AverageRate { get; set; }
 
@@ -69,6 +69,12 @@ namespace DirectAccess
         public string BasinName { get; set; }
 
         public string District { get; set; }
+
+        public double? NumberOfClusters { get; set; } 
+
+        public double? ShotsPerFt { get; set; } 
+
+        public double? TotalShots { get; set; } 
 
     }
 

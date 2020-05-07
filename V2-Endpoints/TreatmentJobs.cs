@@ -28,21 +28,21 @@ namespace DirectAccess
 
         public DateTime? CreatedDate { get; set; }
 
-        public int? TreatmentTop { get; set; }
+        public double? TreatmentTop { get; set; }
 
-        public int? TreatmentBottom { get; set; }
+        public double? TreatmentBottom { get; set; }
 
-        public int? TreatmentSequence { get; set; }
+        public double? TreatmentSequence { get; set; }
 
-        public int? StageCount { get; set; }
+        public double? StageCount { get; set; }
 
-        public int? TotalFluidGal { get; set; }
+        public double? TotalFluidGal { get; set; }
 
-        public int? TotalProppantlbs { get; set; }
+        public double? TotalProppantlbs { get; set; }
 
-        public int? TotalAdditiveGal { get; set; }
+        public double? TotalAdditiveGal { get; set; }
 
-        public int? TotalAdditivelbs { get; set; }
+        public double? TotalAdditivelbs { get; set; }
 
         public bool? OpenHole { get; set; }
 

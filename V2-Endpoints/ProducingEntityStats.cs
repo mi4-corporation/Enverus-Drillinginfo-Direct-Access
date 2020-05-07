@@ -260,6 +260,58 @@ namespace DirectAccess
 
         public decimal? Decl3MoWtr { get; set; }
 
+        public double? BeGasBfactor { get; set; } 
+
+        public DateTime? BeGasEndDate { get; set; } 
+
+        public double? BeGasFinalRate { get; set; } 
+
+        public double? BeGasInitialDecline { get; set; } 
+
+        public double? BeGasInitialRate { get; set; } 
+
+        public double? BeGasMonths { get; set; } 
+
+        public double? BeOilBfactor { get; set; } 
+
+        public DateTime? BeOilEndDate { get; set; } 
+
+        public double? BeOilFinalRate { get; set; } 
+
+        public double? BeOilInitialDecline { get; set; } 
+
+        public double? BeOilInitialRate { get; set; } 
+
+        public double? BeOilMonths { get; set; } 
+
+        public double? FullGasBfactor { get; set; } 
+
+        public DateTime? FullGasEndDate { get; set; } 
+
+        public double? FullGasFinalRate { get; set; } 
+
+        public double? FullGasInitialDecline { get; set; } 
+
+        public double? FullGasInitialRate { get; set; } 
+
+        public double? FullGasMonths { get; set; } 
+
+        public double? FullOilBfactor { get; set; } 
+
+        public double? FullOilEndDate { get; set; } 
+
+        public double? FullOilFinalRate { get; set; } 
+
+        public double? FullOilInitialDecline { get; set; } 
+
+        public double? FullOilInitialRate { get; set; } 
+
+        public double? FullOilMonths { get; set; } 
+
+        public bool? IsGasDcaProxied { get; set; } 
+
+        public bool? IsOilDcaProxied { get; set; }
+        
     }
 
 }

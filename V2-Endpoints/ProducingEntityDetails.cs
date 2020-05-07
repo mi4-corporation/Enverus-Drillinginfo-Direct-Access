@@ -28,17 +28,17 @@ namespace DirectAccess
 
         public double? AverageDailyOil { get; set; }
 
-        public int? Liq { get; set; }
+        public double? Liq { get; set; }
 
-        public int? Gas { get; set; }
+        public double? Gas { get; set; }
 
-        public int? Wtr { get; set; }
+        public double? Wtr { get; set; }
 
-        public int? Wcnt { get; set; }
+        public double? Wcnt { get; set; }
 
         public int? Days { get; set; }
 
-        public int? ProdMonthNo { get; set; }
+        public double? ProdMonthNo { get; set; }
 
         public string ApiList { get; set; }
 
@@ -54,7 +54,7 @@ namespace DirectAccess
 
         public string SourceKey { get; set; }
 
-        public int? IsDeleted { get; set; }
+        public bool? IsDeleted { get; set; }
 
     }
 

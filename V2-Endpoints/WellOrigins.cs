@@ -102,11 +102,15 @@ namespace DirectAccess
 
         public string Formation { get; set; }
 
-        public string Block { get; set; }
+        public string GroundElevationType { get; set; }
 
-        public string Survey { get; set; }
+        public string OperatorCompanyName { get; set; }
 
-        public string Meridian { get; set; }
+        public string OperatorTicker { get; set; }
+
+        public string SpudDateSource { get; set; }
+
+        public string TopLevelCommonName { get; set; }
 
     }
 

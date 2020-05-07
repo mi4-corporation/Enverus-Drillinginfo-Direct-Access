@@ -66,7 +66,7 @@ namespace DirectAccess
 
         public string Formation { get; set; }
 
-        public int? FormationDepth { get; set; }
+        public double? FormationDepth { get; set; }
 
         public string H2SArea { get; set; }
 
@@ -108,7 +108,7 @@ namespace DirectAccess
 
         public decimal? PermitBHLongitudeWGS84 { get; set; }
 
-        public int? PermitDepth { get; set; }
+        public double? PermitDepth { get; set; }
 
         public decimal? PermitLatitudeWGS84 { get; set; }
 
@@ -126,7 +126,7 @@ namespace DirectAccess
 
         public string Range { get; set; }
 
-        public int? RatedHP { get; set; }
+        public double? RatedHP { get; set; }
 
         public double? RatedWaterDepth { get; set; }
 
@@ -150,7 +150,7 @@ namespace DirectAccess
 
         public string Township { get; set; }
 
-        public int? TrueVerticalDepth { get; set; }
+        public double? TrueVerticalDepth { get; set; }
 
         public DateTime? UpdatedDate { get; set; }
 

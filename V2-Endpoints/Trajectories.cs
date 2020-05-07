@@ -2,13 +2,12 @@
 
 namespace DirectAccess
 {
-    /// <summary>
+	/// <summary>
     /// This class represents the DrillingInfo V2 Trajectories endpoint. Each property in the class represents a data column for the endpoint, matching it by name.
     /// </summary>
     public class Trajectories
     {
-
-        public int TrajectoryID { get; set; }
+        public int? TrajectoryID { get; set; }
 
         public int? WellboreID { get; set; }
 
@@ -30,7 +29,7 @@ namespace DirectAccess
 
         public string Source { get; set; }
 
-        public decimal? MeasuredDepth { get; set; }
+        public double? MeasuredDepth { get; set; }
 
         public string NorthReference { get; set; }
 
@@ -40,12 +39,12 @@ namespace DirectAccess
 
         public string Field { get; set; }
 
+        public string Geometry { get; set; }
+
         public string BasinName { get; set; }
 
         public string District { get; set; }
 
         public string ComputeMethod { get; set; }
-
     }
-
 }

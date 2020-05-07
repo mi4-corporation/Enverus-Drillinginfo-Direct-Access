@@ -26,7 +26,7 @@ namespace DirectAccess
 
         public DateTime? JobStartDate { get; set; }
 
-        public int? NumberOfJobDay { get; set; }
+        public double? NumberOfJobDay { get; set; }
 
         public string Operator { get; set; }
 
@@ -34,15 +34,15 @@ namespace DirectAccess
 
         public string SubSource { get; set; }
 
-        public int? TVD { get; set; }
+        public double? TVD { get; set; }
 
-        public int? TotalAdditiveLbs { get; set; }
+        public double? TotalAdditiveLbs { get; set; }
 
         public decimal? TotalBaseNonWaterVolumeGal { get; set; }
 
         public decimal? TotalBaseWaterVolumeGal { get; set; }
 
-        public int? TotalProppantLbs { get; set; }
+        public double? TotalProppantLbs { get; set; }
 
         public DateTime? UpdatedDate { get; set; }
 
