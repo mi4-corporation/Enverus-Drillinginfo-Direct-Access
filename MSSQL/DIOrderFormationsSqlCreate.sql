@@ -34,7 +34,6 @@ begin
 
 IF NOT EXISTS (SELECT * FROM DrillingInfo.sys.indexes WHERE object_id = OBJECT_ID(N'DrillingInfo.[dbo].OrderFormations') AND name = N'IX_OrderFormations_UpdatedDate') CREATE NONCLUSTERED INDEX IX_OrderFormations_UpdatedDate ON DrillingInfo.dbo.OrderFormations (UpdatedDate)
 
---Ask Blake if this counts as the "state" for this table. (done)
 IF NOT EXISTS (SELECT * FROM DrillingInfo.sys.indexes WHERE object_id = OBJECT_ID(N'DrillingInfo.[dbo].OrderFormations') AND name = N'IX_OrderFormations_StateCode') CREATE NONCLUSTERED INDEX IX_OrderFormations_StateCode ON DrillingInfo.dbo.OrderFormations (StateCode)
 
 IF NOT EXISTS (SELECT * FROM DrillingInfo.sys.indexes WHERE object_id = OBJECT_ID(N'DrillingInfo.[dbo].OrderFormations') AND name = N'IX_OrderFormations_DeletedDate') CREATE NONCLUSTERED INDEX IX_OrderFormations_DeletedDate ON DrillingInfo.dbo.OrderFormations (DeletedDate)
