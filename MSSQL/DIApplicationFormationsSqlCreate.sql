@@ -2,7 +2,7 @@ Use DrillingInfo
 
 if not exists (select * 
     from INFORMATION_SCHEMA.TABLES   
-    where TABLE_SCHEMA = N'dbo' and TABLE_NAME = N'ApplcationFormations') 
+    where TABLE_SCHEMA = N'dbo' and TABLE_NAME = N'ApplicationFormations') 
 begin
 
 create table ApplicationFormations(
